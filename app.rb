@@ -11,7 +11,6 @@ class App < Sinatra::Base
   get "/hello/:name" do
     @user_name = params[:name]
     "Hello #{@user_name}!"
-    erb :hello
   end
 
   # Code your final two routes here:
@@ -23,7 +22,6 @@ class App < Sinatra::Base
   get "/goodbye/:name" do
     @user_name = params[:name]
     "Goodbye, #{@user_name}."
-    erb :goodbye
   end
   
   get '/multiply' do
